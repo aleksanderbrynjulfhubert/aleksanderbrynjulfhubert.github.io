@@ -31,13 +31,15 @@
  */
 /* Document
    ========================================================================== */
-html { font-family: sans-serif; /* 1 */ line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ }
+html { font-family: 'Spectral', serif; /* 1 */ line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ }
 /* Sections
    ========================================================================== */
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body { margin: 0; }
+body { margin: 0;
+    font-family: 'Spectral', serif;
+    }
 /**
  * Add the correct display in IE 9-.
  */
@@ -452,6 +454,8 @@ img { max-width: 100%; }
 .b--washed-yellow { border-color: #fffceb; }
 .b--washed-red { border-color: #ffdfdf; }
 .b--transparent { border-color: transparent; }
+
+.bl--black-60 { border-left-color: rgba( 0, 0, 0, .6 ); border-left-width: 1px; border-left-style: solid; }
 /*
 
    BORDER RADIUS
@@ -1520,6 +1524,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .pb5 { padding-bottom: 4rem; }
 .pb6 { padding-bottom: 8rem; }
 .pb7 { padding-bottom: 16rem; }
+.ptneg { padding-top: -.25rem; }
 .pt0 { padding-top: 0; }
 .pt1 { padding-top: .25rem; }
 .pt2 { padding-top: .5rem; }

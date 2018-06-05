@@ -4,31 +4,77 @@
         <meta charset = "utf-8">
         <title>Aleksander B. Hübert</title>
         <meta name = "index">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Spectral" rel="stylesheet">
         <link rel="stylesheet" href="css/tachyons.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
     </head>
     <body class="bg-near-white">
-    <header>
-        <nav class="center bg-near-black tc mw-100 fw2">
-            <div class="bg-near-black fl w-5 white"><p>&nbsp;</p></div>
-            <!--<div class="bg-near-black fl w-20 white b"><p>Aleksander Hübert</p></div>-->
-            <a class="dim bg-near-black pa3 fl w-20 white b link" href="index.html">Aleksander Hübert</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="profile.html">Work Profile</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="code.html">Code</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="design.html">Graphics</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="project.html">Projects</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="contact.html">Contact/CV</a>
-            <div class="bg-near-black fl w-25 white"><p>&nbsp;</p></div>
-        </nav>
-        <div class="mw7 tc center pt4">
-            <h1 class="f3 f2-m f1-s fw2 mv3 black-90 b-l">
-            </h1>
-            <h2 class="f5 f4-m f3-s fw2 mt0 black-50 b-l">
-            </h2>
+    <style>
+        .div1 { background : no-repeat center right fixed url("images/mont_bakgrunn.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 700px;
+                width: auto}
+        .div2 { background : no-repeat center right fixed url("images/norge_bakgrunn.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 700px;
+                width: auto;
+                font-family: 'IBM Plex Mono', monospace;}
+        .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                padding: 1rem}
+    </style>
+        <header>
+            <nav class="center bg-near-black tc mw-100 fw2">
+                <div class="bg-near-black fl w-5 white"><p>&nbsp;</p></div>
+                <!--<div class="bg-near-black fl w-20 white b"><p>Aleksander Hübert</p></div>-->
+                <a class="dim bg-near-black pa3 fl w-20 white b link" href="index.html">Aleksander&nbsp;Hübert</a>
+                <a class="dim bg-near-black pa3 fl w-10 white link" href="profile.html">Resume</a>
+                <a class="dim bg-near-black pa3 fl w-10 white link" href="blog.html">Blog</a>
+                <a class="dim bg-near-black pa3 fl w-10 white link" href="design.html">Graphics</a>
+                <a class="dim bg-near-black pa3 fl w-10 white link" href="project.html">Projects</a>
+                <a class="dim bg-near-black pa3 fl w-10 white link" href="contact.html">Contact/CV</a>
+                <div class="bg-near-black fl w-25 white"><p>&nbsp;</p></div>
+            </nav>
+        </header>
+        <div class="div1" style="">
+            <div class="container bg-black-60">
+                <h1 class="f1-ns fw2 white tc">Aleksander Brynjulf Hübert</h1>
+                <h2 class="f3-ns fw2 mt0 white-90 tc">hei</h2>
+            </div>
         </div>
-    </header>
-    <article>
+        <div class="center bg-near-white" style="">
         <div class="fl w-two-thirds pa3 pt1">
-        <svg width="500" height="100"></svg>
+            <section class="mv4 pa3">
+                <div class="center tl w-two-thirds">
+                    <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">About Me</h3>
+                    <div class="pa3 bt b--black-10">
+                        <p class="f6 f5-ns fw2 lh-copy">
+                        I'm Aleksander, a Norwegian-American studying Quantitative Sciences, Math, and Computer Science at <a href="http://www.emory.edu/home/index.html" title="emory.edu" class="link blue underline-hover">Emory University</a> in Atlanta. 
+                        </p>
+                        <p class="f6 f5-ns fw2 lh-copy">
+                        I am never able to make up my mind. As a consequence, I never really decided what I am interested in so I am interested in everything. I have interests in things from <a href="https://letterboxd.com/abhubert/" title="film" class="link blue underline-hover">film</a> to design to math and linguistics. This is what lead me to study math and statistics. 
+                        </p>
+                        <p class="f6 f5-ns fw2 lh-copy">
+                        To quote my favorite 70s Norwegian TV show:
+                        </p>
+                        <p class="f6 f5-ns fw2 lh-copy">
+                            <i>Universet. En uendleighet av stjerner og planeter. Ingen vet hvor stort eller hvor gammelt det er.</i>
+                        </p>
+                        <p class="tr f6 f5-ns fw2 lh-copy pt0">  - Brødrene Dal </p>
+                        <p class="f6 f5-ns fw2 lh-copy">
+                        To paraphrase, the universe is gigantic.<br> And since you use math to study the universe, I can cop out and be interested in everything.
+                        </p>
+                        <!--<p class="f6 f5-ns fw2 lh-copy">
+                        I enjoy hiking and took this picture while standing on the top of Galdhøpiggen, the tallest mountain in Norway.
+                        </p>-->
+                    </div>
+                </div>
+            </section>
             <!--<section class="center mw7 bg-light-gray mv4 pa3">
                 <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3"><i>date</i>&nbsp;- <b>Post title</b></h3>
                 <div class="pa2 bt b--black-10">
@@ -37,32 +83,20 @@
             </section>-->
         </div>
         <div class="fl w-third pa3 pt1 tc">
-            <section class="center mw5 mw6-ns bg-light-gray mv4 pa3">
-                <div>
-                    <img src="images/aleks.jpg" class="dib ba b--black-05 pa2" title="Aleksander">
+            <section class="center mw5 mw6-ns mv4 pa3">
+                <div class="">
+                    <img src="images/Hubert_Aleksander-0020.JPG" class="cente b--black" title="Aleksander">
                 </div>
             </section>
-            <section class="center mw5 mw6-ns bg-light-gray mv4 pa3">
-                <div class="tl">
-                    <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">About Me</h3>
-                    <div class="pa3 bt b--black-10">
-                        <p class="f6 f5-ns fw2 lh-copy">
-                        Hi! My name is Aleksander and I'm a Norwegian-American studying Quantitative Sciences, Math, and Computer Science at <a href="http://www.emory.edu/home/index.html" title="emory.edu" class="link blue underline-hover">Emory University</a> in Atlanta. 
-                        </p>
-                        <p class="f6 f5-ns fw2 lh-copy">
-                        I have interests in things from <a href="https://letterboxd.com/abhubert/" title="film" class="link blue underline-hover">film</a> to design to math and linguistics. 
-                        </p>
-                    </div>
-                </div>
-            </section>
+
         </div>
-        </article>
+    </div>
     </body>
-    <footer class="centert tc mid-gray">
+    <!--<footer class="center tc mid-gray">
         <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3"></h3>
         <ul class="list ph3 ph5-ns">
             <li class="dib mr2"><a href="https://twitter.com/AleksHubert" class="link dim mid-gray"><img src="images/Twitter_Logo.png" title="Twitter" height="15" class=""/>&nbsp;@AleksHubert</a></li>
             <li class="dib mr2"><a href="https://github.com/abhubert" class="link dim mid-gray"><img src="images/GitHub_Logo.png" title="GitHub" height="15" class=""/>&nbsp;abhubert</a></li>
         </ul>
-    </footer>
+    </footer>-->
 </html>
