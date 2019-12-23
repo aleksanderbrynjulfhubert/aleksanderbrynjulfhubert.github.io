@@ -5,96 +5,51 @@
         <title>Aleksander Brynjulf Hübert</title>
         <meta name = "index">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Spectral" rel="stylesheet">
-        <link rel="stylesheet" href="css/tachyons.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="js/synthscope.js"></script>
     </head>
-    <body class="bg-near-white">
-    <style>
-        .div1 { background : no-repeat center right fixed url("images/mont_bakgrunn.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 700px;
-                width: auto
-                }
-        .div2 { background : no-repeat center right fixed url("images/norge_bakgrunn.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 700px;
-                width: auto;
-                font-family: 'IBM Plex Mono', monospace;
-                }
-        .container {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                padding: 1rem
-                }
-    </style>
-        <header>
-            <nav class="center bg-near-black tc mw-100 fw2">
-                <div class="bg-near-black fl w-5 white"><p>&nbsp;</p></div>
-                <a class="dim bg-near-black pa3 fl w-20 white b link" href="index.html">Aleksander&nbsp;Hübert</a>
-                <a class="dim bg-near-black pa3 fl w-10 white link" href="profile.html">Resume</a>
-                <a class="dim bg-near-black pa3 fl w-10 white link" href="blog.html">Blog</a>
-                <a class="dim bg-near-black pa3 fl w-10 white link" href="design.html">Temp</a>
-                <a class="dim bg-near-black pa3 fl w-10 white link" href="project.html">Projects</a>
-                <a class="dim bg-near-black pa3 fl w-10 white link" href="contact.html">Contact/CV</a>
-                <div class="bg-near-black fl w-25 white"><p>&nbsp;</p></div>
-            </nav>
-        </header>
-        <div class="div1" style="">
-            <div class="container bg-black-60">
-                <h1 class="f1-ns fw2 white tc">Aleksander Brynjulf Hübert</h1>
-                <h2 class="f3-ns fw2 mt0 white-90 tc">hei</h2>
-            </div>
-        </div>
-        <div class="center bg-near-white" style="">
-        <div class="fl w-two-thirds pa3 pt1">
-            <section class="mv4 pa3">
-                <div class="center tl w-two-thirds">
-                    <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">About Me</h3>
-                    <div class="pa3 bt b--black-10">
-                        <p class="f6 f5-ns fw2 lh-copy">
-                            I'm Aleksander, a Norwegian-American studying Quantitative Sciences, Math, and Linguistics at <a href="http://www.emory.edu/home/index.html" title="emory.edu" class="link blue underline-hover">Emory University</a> in Atlanta. 
-                        </p>
-                        <p class="f6 f5-ns fw2 lh-copy">
-                            I have tons of interests. Everything from <a href="https://letterboxd.com/abhubert/" title="film" class="link blue underline-hover">film</a> to design to math and linguistics to music and maps.
-                        </p>
-                        <p class="f6 f5-ns fw2 lh-copy">
+    <body onload="">
+    <!-- NAVBAR -->
 
-                        </p>
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("pagecontent/nav.html");
+            });
+        </script>
+        <div id="main" >
+            <div class="banner">
+                <span class="menuButton" onclick="toggleNav()">&#9776;</span>
+            </div>
+    <!-- MAIN CONTENT -->
+            <div>
+                <div class="leftpan">
+                    <div class="typeArea">
+                        <h2 style="border-bottom-style: solid;     margin-top: 0px;">work</h2>
+                        <h3 style="margin-bottom: 0px"> Reprojecting Samothrace</h3>
+                        <a href="samothraki.html"><img src="images/samo2.png" style = "width: 100%;" title="Samothraki"></a>
+                        <h3 style="margin-bottom: 0px">Historic Atlanta Geocoding</h3>
+                        <a href="atlantageocode.html"><img src="images/atlgeocoder.png" style = "width: 100%;" title="Atlanta Directories"></a>
+                    </div>
+                    <div class="typeArea">
+                        <h2 style="border-bottom-style: solid;     margin-top: 0px;">math &amp; coding</h2>
+                        <h3 style="margin-bottom: 0px">Hybrid Sort</h3>
+                        <a href="hybridsort.html"><img src="images/array.png" style = "width: 100%" title="Hybrid Sort"></a>
                     </div>
                 </div>
-            </section>
-            <!--<section class="center mw7 bg-light-gray mv4 pa3">
-                <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3"><i>date</i>&nbsp;- <b>Post title</b></h3>
-                <div class="pa2 bt b--black-10">
-                <p class="f6 f5-ns fw2 lh-copy">lorem ipsum</p>
+                <div class="rightpan">
+                    <div class="typeArea" style="padding-top: 3.5em;">
+                    <h2>Aleksander Brynjulf Hübert</h2>
+                    <p>I am currently a masters student studying Applicable Mathematics at The London School of Economics and Political Science.</p>
+                    </div>
                 </div>
-            </section>-->
+            </div>
+            <div class="mainpan" style="font-size: .5em">
+                <p>(C)Aleksander Brynjulf Hübert. Last updated December 2019</p>
+            </div>
         </div>
-        <div class="fl w-third pa3 pt1 tc">
-            <section class="center mw5 mw6-ns mv4 pa3">
-                <div class="">
-                    <img src="images/Hubert_Aleksander-0020.JPG" class="cente b--black" title="Aleksander">
-                </div>
-            </section>
-
-        </div>
-    </div>
-    <div class="center bg-near-white" style="">
-        <div class="center tc pa3 pt1">
-        <p> Hello
-        </p>
-
-        </div>
-    </div>
     </body>
-    <footer class="center tc mid-gray">
-        <h3 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">&nbsp;</h3>
-        <ul class="list ph3 ph5-ns">
-            <li class="dib mr2"><a href="https://twitter.com/AleksHubert" class="link dim mid-gray"><img src="images/Twitter_Logo.png" title="Twitter" height="15" class=""/>&nbsp;@abhubert</a></li>
-            <li class="dib mr2"><a href="https://github.com/abhubert" class="link dim mid-gray"><img src="images/GitHub_Logo.png" title="GitHub" height="15" class=""/>&nbsp;abhubert</a></li>
-        </ul>
-    </footer>
+
 </html>

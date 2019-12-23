@@ -2,29 +2,31 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>Aleksander B. Hübert</title>
+        <title>Aleksander Brynjulf Hübert</title>
         <meta name = "contact">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Spectral" rel="stylesheet">               
-        <link rel="stylesheet" href="css/tachyons.css">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Spectral" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
     </head>
-    <body class="bg-near-white">
-    <header>
-        <nav class="center bg-near-black tc mw-100 fw2">
-            <div class="bg-near-black fl w-5 white"><p>&nbsp;</p></div>
-            <a class="dim bg-near-black pa3 fl w-20 white b link" href="index.html">Aleksander&nbsp;Hübert</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="profile.html">Resume</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="blog.html">Blog</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="design.html">Temp</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="project.html">Projects</a>
-            <a class="dim bg-near-black pa3 fl w-10 white link" href="contact.html">Contact/CV</a>
-            <div class="bg-near-black fl w-25 white"><p>&nbsp;</p></div>
-        </nav>
-        <div class="mw7 center pt4">
-            <h1 class="f2 f2-m f1-s fw2 mv3 black-90">
-                <br>Contact/Resume
-            </h1>
+    <body>
+<!-- NAVBAR -->
+
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("pagecontent/nav.html");
+            });
+        </script>
+        <div id="main" >
+            <div class="banner">
+                <span class="menuButton" onclick="toggleNav()">&#9776;</span>
+
+            </div>
+            <div class="">
+
+            </div>
         </div>
-    </header>
-        <p class="ph7 pt1"><b class="f3">e-mail:</b><br>abhuber[at]emory.edu</p>
-        <p class="ph7 pt1"><a href="documents/Hubert_Aleksander_Resume.pdf" title="My Resume" class="link blue underline-hover"><b class="f3">resume</b></a></p> 
+
     </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Aleksander Brynjulf Hübert</title>
+        <meta name = "index">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Spectral" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
+    </head>
+    <body onload="">
+    <!-- NAVBAR -->
+
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("pagecontent/nav.html");
+            });
+        </script>
+        <div id="main" >
+            <div class="banner">
+                <span class="menuButton" onclick="toggleNav()">&#9776;</span>
+            </div>
+    <!-- MAIN CONTENT -->
+            <div>
+                <div class="mainpan">
+                    <div class="typeArea">
+                    <h1> Under Construction </h1>
+                    <a href="index.html" title="home" class="link">Back To Homepage</a>
+                        <h2> Reprojecting Samothrace </h2>
+                        <p>
+                        In the summer of 2018, after a long journey involving 3 flights, two cars, and a ferry I made it to the Greek Island of Samothrace in the Northern Agean. I was ready to see some artifacts and map out the ancient Sancturary of the Great Gods, but from day one we already had an issue. Our coordinates were in an old Greek <em>HATT Projection</em> that was incompatible with modern GIS software. These coordinates were spatially accurate so they would render correctly in programs such as CAD but if we wanted to explore the Sanctuary and Island geographically we would need to update these coordinates.
+                        </p>
+                        <p>
+                        The newer, more compatible projection that was chosen for the project was the <em>Greek Grid (GGRS87)</em>. Typically reprojections are a simple task, but because of the age of the <em> HATT Projection </em> there was no support for this projection in the first place and we needed a different solution. Luckily we had a method of translating the coordinates that was documented by a formula and a table of constants. Each set of constants corresponding to a different sector of the globe. This method of reprojecting was put together by the Greek Military and as long as we could follow the methodology accuracy of the coordinates would not be an issue.
+                        </p>
+                        
+                        <h3>More to Come</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,8 +1,161 @@
-html { font-family: 'Spectral', serif; /* 1 */ line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ }
+html {      
+            font-family: 'IBM Plex Sans', sans-serif;
+            font
+}
 
-body { margin: 0;
-    font-family: 'Spectral', serif;}
+body {      margin: 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #e5e5e5;
+            color: #111111;
+}
+
+ul {
+            list-style: none;
+            padding: 0;
+            margin: 0; 
+}
+
+ul li {
+            padding: 0;
+            margin: 0; 
+}
 
 
+.canvasback {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
 
-    
+/*Sidebar*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+#main {
+    margin-left: 0;
+    transition: margin-left .5s;
+    position: relative;
+    width: 100vw
+}
+
+/*----*/
+
+.banner {
+    width: 100%;
+    z-index: 4;
+    margin-left: 2em;
+}
+
+/*Main Classes*/ 
+.panel {
+    position: fixed;
+    left: 35%;
+    top: 100px;
+    height: 30%;
+    width: 30%;
+    margin: 110px,0,0,-110px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: .9;
+}
+
+.panel h1 {
+
+    font-size: 1.5em;
+    font-weight: 10000;
+    text-align: center;
+
+}
+                
+.menuButton {
+    color: #111111;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.typeArea{
+    padding: 10px;
+    width: 100%;
+}
+
+.typeArea h1{
+    margin: 0px;
+}
+
+.link{
+   text-decoration: none;
+   -webkit-transition: color .15s ease-in; transition: color .15s ease-in;
+   color: #357edd;
+   
+}
+
+.link:hover{color: #96ccff; -webkit-transition: color .15s ease-in; transition: color .15s ease-in;}
+/*----*/
+
+.mainpan{
+    width: 70%;
+    float: left;
+    margin-left: 2em;
+}
+
+.leftpan{
+    width: 60%;
+    float: left;
+    margin-left: 2em;
+}
+
+.rightpan{
+    width: 30%;
+    float: left;
+    margin-left: 2em;
+}
+
+.synth{
+    padding:20px;
+}
+
+.codeblock{
+    background-color: #cdcdcd;
+    padding: 1em;
+    font-family: monospace,monospace;
+    border: 1px solid #aaaaaa;
+}
+.codeblock p{
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.tab { 
+    text-indent:40px;
+    margin: 
+}
