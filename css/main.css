@@ -1,25 +1,25 @@
 html {      
-            font-family: 'IBM Plex Sans', sans-serif;
-            font
+    font-family: 'IBM Plex Sans', sans-serif;
+    font
 }
 
-body {      margin: 0;
-            font-family: 'IBM Plex Sans', sans-serif;
-            background-color: #e5e5e5;
-            color: #111111;
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #e5e5e5;
+    color: #111111;
 }
 
 ul {
-            list-style: none;
-            padding: 0;
-            margin: 0; 
+    list-style: none;
+    padding: 0;
+    margin: 0; 
 }
 
 ul li {
-            padding: 0;
-            margin: 0; 
+    padding: 0;
+    margin: 0; 
 }
-
 
 .canvasback {
     position:fixed;
@@ -39,7 +39,7 @@ ul li {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #444;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30px;
@@ -49,13 +49,13 @@ ul li {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f1f1f1;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #111;
 }
 
 
@@ -123,9 +123,9 @@ ul li {
 /*----*/
 
 .mainpan{
-    width: 70%;
-    float: left;
-    margin-left: 2em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .leftpan{
@@ -140,17 +140,15 @@ ul li {
     margin-left: 2em;
 }
 
-.synth{
-    padding:20px;
-}
-
 .codeblock{
-    background-color: #cdcdcd;
+    background-color: #cfcfcf;
     padding: 1em;
     font-family: monospace,monospace;
     border: 1px solid #aaaaaa;
-}
-.codeblock p{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
     margin-bottom: 1%;
     margin-top: 1%;
 }
