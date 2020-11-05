@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Aleksander Brynjulf Hübert</title>
+        <meta name = "index">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Spectral" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
+    </head>
+    <body onload="">
+    <!-- NAVBAR -->
+
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("pagecontent/nav.html");
+            });
+        </script>
+        <div id="main" >
+            <div class="banner">
+                <span class="menuButton" onclick="toggleNav()">&#9776;</span>
+            </div>
+    <!-- MAIN CONTENT -->
+            <div>
+                <div class="rightpan">
+                    <div class="typeArea" style="padding-top: 3.5em;">
+                    <h1>Aleksander Brynjulf Hübert</h1>
+                    <p>I am currently a masters student studying Applicable Mathematics at The London School of Economics and Political Science.</p>
+                    <p>
+                    Besides math I enjoy listening to and making music, studying laguage, maps, and movies.
+                    </p>
+                    <a href="about.html" class="link">Read more</a>
+                    </div>
+                </div>
+                <div class="leftpan">
+                    <div class="typeArea" style="padding-top: 3.5em;">
+                        <h2>Conway's Game of Life Simulation</h2>
+                        <button onclick="gliderGun()">Make Glider Gun</button> 
+                        <button onclick="glider()">Make Glider</button> 
+                        <button onclick="blinker()">Make blinker</button> 
+                        <button onclick="clearCanvas()">Clear</button> 
+                        <canvas id="game" width="800" height="500" style=""></canvas>
+                    <script type="text/javascript" src="js/gameOfLife.js"></script>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mainpan" style="font-size: .5em">
+                <p>(C)Aleksander Brynjulf Hübert. Last updated July 2020</p>
+            </div>
+        </div>
+    </body>
+
+</html>
