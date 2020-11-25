@@ -24,17 +24,42 @@
             </div>
     <!-- MAIN CONTENT -->
             <div>
-                <div style="padding-left: 2em; width: 90%">
-                <h1>Under Construction</h1>
-                    <div class="typeArea" style="padding-top: 1em;">
-                        <h2>Conway's Game of Life Simulation</h2>
+                <div class="mainpan" style="padding-left: 2em; width: 70%">
+                <h1 style="text-align: center">Universality in Conway's Game of Life</h1>
+                <h3 style="text-align: center; color: gray">From my LSE Dissertation in Mathematics entitled <br><i>Turing Completeness, Logic Gates, and the Universality of Conway’s Game of Life</i></h3>
+                    <div class="" style="padding-top: 1em;">
+                    <h3 style="margin-top: 0px; text-align: center"><a href="../documents/hubert_dissertation.pdf" class="link">Dissertation PDF</a></h3>
+                        <!--<h2>Conway's Game of Life Simulation</h2>
                         <button onclick="gliderGun()">Make Glider Gun</button> 
                         <button onclick="glider()">Make Glider</button> 
                         <button onclick="blinker()">Make blinker</button> 
                         <button onclick="clearCanvas()">Clear</button> 
                         <canvas id="game" width="800" height="500" style=""></canvas>
-                    <script type="text/javascript" src="../js/gameOfLife.js"></script>
+                    <script type="text/javascript" src="../js/gameOfLife.js"></script>-->
+                    <h3>Beginnings</h3>
+                    <p>
+                        While studying at the London School of Economics and Political Science, a large and enjoyable part of my degree was writing my dissertation under the supervision of Prof. Andy Lewis-Pye for which I recieved the highest possible mark, a Distinction. My dissertation explored the notion of Turing Universality within the Cellular Automata: Conway's Game of Life. Behind all the jargon are interesting ideas that underpin modern math and computing and also produce a visual landscape to explore these ideas.
+                    </p>
+                    <h3>Turing Completeness</h3>
+                    <p>
+                        Not every problem has a solution that can be found by following an algorithm. This idea revolutionized mathematics and computing in the 1920s and eventually lead to the idea of computational models with varied power. The Alonzo-Church Thesis unified three main theories of computability and eventually lead to the idea of <b>Turing Completeness</b>. A Turing complete system is theoretically capable of universal computation, with the ability to compute a solution to every computable problem. Achieving Universality is not a particularly difficult task and various systems have been proven Turing complete including various cellular automata.
+                    </p>
+                    <h3>Conway's Game of Life</h3>
+                    <p>
+                        In the 1940s Stanisław Ulam and John von Neumann began developing the idea of <b>cellular automata</b>. Cellular automata consist of cells in an infinite grid and a set of rules for how to update the set of each cell. These constructions have proven useful in studying biological process, physics, and computing. With each step forward in time, the cells in the grid evolve depending on the number of states, the shape of the cells, and the rules to how they evolve complex structures and modeled behaviour can arise.
+                    </p>
+                    <img class="center" style="" src="../images/glider_state.png" alt="glider">
+                    <p class="diagramCaption">Glider States in Conway's Game of Life</p>
+                    <p>
+                        Invented by John H. Conway in 1970 <b>Conway's Game of Life</b> is a 2-dimensional 2-state cellular automata. This means that each cell lives in a 2D grid of squares and each cell is in one of two states: on or off. This cellular automata is one of the most well studied due to the complex structures and behaviours that present themselves during the evolution of the system. These complex behaviours are what make it possible to build a Turing Universal system, a system capable of universal computation.
+                    </p>
+                    <p>
+                        The ideas of Turing completeness within Conway's Game of Life are fleshed out in the dissertation by building logic gates and circuits within the Game of Life using various constructions to simulate information transfer and logic. Then proving the Turing equivalence of the construction.
+                    </p>
+                    <img class="center" style="" src="../images/nor_noinput.png" alt="glider">
                     </div>
+                    <p class="diagramCaption">NOR Gate in Conway's Game of Life</p>
+                    
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ html {
 
 body {
     margin: 0;
+    margin-bottom: 50px;
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: #e5e5e5;
     color: #111111;
@@ -68,6 +69,13 @@ ul li {
 
 /*----*/
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 .banner {
     width: 100%;
     z-index: 4;
@@ -129,15 +137,15 @@ ul li {
 }
 
 .leftpan{
-    width: 60%;
+    width: 30%;
     float: left;
     margin-left: 2em;
 }
 
 .rightpan{
-    width: 30%;
-    float: left;
-    margin-left: 3em;
+    width: 60%;
+    float: right;
+    margin-right: 2em;
 }
 
 .codeblock{
@@ -156,4 +164,10 @@ ul li {
 .tab { 
     text-indent:40px;
     margin: 
+}
+
+.diagramCaption {
+    text-align: center;
+    color: darkgray;
+    font-size: 12px;
 }
