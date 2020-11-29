@@ -140,13 +140,13 @@ ul li {
 .leftpan{
     width: 30%;
     float: left;
-    margin-left: 2em;
+    margin-left: 5%;
 }
 
 .rightpan{
     width: 60%;
     float: right;
-    margin-right: 2em;
+    margin-right: 5%;
 }
 
 .codeblock{
