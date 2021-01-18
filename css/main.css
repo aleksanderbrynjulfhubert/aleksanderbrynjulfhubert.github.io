@@ -1,6 +1,5 @@
 html {      
     font-family: 'IBM Plex Sans', sans-serif;
-    font
 }
 
 body {
@@ -80,7 +79,6 @@ ul li {
 .banner {
     width: 100%;
     z-index: 4;
-    margin-left: 2em;
 }
 
 /*Main Classes*/ 
